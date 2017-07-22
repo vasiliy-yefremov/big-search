@@ -5,14 +5,12 @@ body {
 	color: #c2c2c2;
 }
 .container {
-	text-align: center;
+	width: 960px;
 	margin: 0 auto;
 }
 .form {
-	position: relative;
-	display: inline-block;
-	width: 80%;
-	border: none;
+	display: block;
+	width: 100%;
 	margin-top: 40px;
 }
 .input-field {
@@ -46,15 +44,19 @@ body {
 	transition: transform 0.1s;
  }
  .info {
- 	width: 1250px;
- 	margin: 5%;
  	margin-top: 30px;
+ 	font-size: 0;
  }
  .column {
  	width: 30%;
  	display: inline-block;
  	box-sizing: border-box;
  	margin-right: 3%;
+ 	font-size: 14px;
+ }
+ .column:nth-of-type(2) {
+ 	margin-left: 5%;
+ 	margin-right: 5%;
  }
  .title {
  	text-align: left;
@@ -68,8 +70,6 @@ body {
  	padding: 0;
 }
  .unit {
- 	width: 100%;
- 	display: inline-block;
 	background: #FFF;
  	margin-top: 10px;
  }
@@ -78,7 +78,8 @@ body {
 	height: 100%;
 	background: rgba(118,117,128,0.05);
 	color: #c2c2c2;
-	display: inline-block;
+	display: block;
+	padding: 10px;
 }
 .link:hover {
 	background-color: rgba(118,117,128,0.1);
@@ -90,16 +91,17 @@ body {
 .section_img {
 	width: 50px;
 	height: 50px;
-	padding: 7px 0 7px 0;
+	margin-right: 10px;
 }
 .image-aligner {
 	vertical-align: middle;
 	display: inline-block;
 }
 .subtitle {
-	width: 240px;
-	margin-left: 20px;
+	width: calc(100%-70px);
+	font-weight: bold;
+	max-height: 35px;
 	display: inline-block;
+	overflow: hidden;
 	vertical-align: middle;
-	text-align: left;
-	}
+}
